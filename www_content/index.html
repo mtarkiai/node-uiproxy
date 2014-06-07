@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular.js"></script>
+    <script src="//angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.11.0.js"></script>
+    <script src="js/app.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/ui-demo.css" rel="stylesheet">
+</head>
+<body ng-app="ui-demo">
+
+<h1>Proxy server demo</h1>
+<!-- Sample data from an AJAX/REST endpoint -->
+<div ng-controller="ServerDataCtrl">
+
+    <button type="button" class="btn btn-primary" ng-click="callProxyServer()">
+        Fire a request:
+    </button>
+
+    <table>
+        <tr>
+            <td><label for="status">Server status:</label></td>
+            <td><input id="status" type="text" ng-model="proxyData.status" placeholder="Status"></td>
+        </tr>
+        <tr>
+            <td><label for="reqparam">Request parameter:</label></td>
+            <td><input id="reqparam" type="text" ng-model="proxyData.req_param" placeholder="ReqParam"></td>
+        </tr>
+        <tr>
+            <td><label for="counter">Server-side request counter:</label></td>
+            <td><input id="counter" type="text" ng-model="proxyData.proxy_counter" placeholder="Counter"></td>
+        </tr>
+    </table>
+
+</div>
+
+</body>
+</html>
