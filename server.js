@@ -4,7 +4,7 @@
  @since 6/6/14
  */
 
-const SERVER_PORT = 8000;
+const SERVER_PORT = 9000;
 const NODETIME_CONFIG = {
     enabled: false,
     account_key: 'insert_here',

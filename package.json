@@ -1,7 +1,8 @@
 {
+  "name": "UIProxy",
   "version": "0.0.1",
   "dependencies": {
-    "express": "~4.4.1",
+    "express": "~4.4.5",
     "nodetime": "~0.8.15",
     "request": "~2.36.0"
   },
