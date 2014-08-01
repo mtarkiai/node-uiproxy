@@ -15,4 +15,5 @@ RUN cd /app; npm install
 
 WORKDIR /app/
 EXPOSE  9000
+EXPOSE 80
 CMD ["nodejs", "/app/server.js"]
